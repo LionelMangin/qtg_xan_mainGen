@@ -1,0 +1,40 @@
+$EXTRA_SCRIPT = {
+  'XAN_BACK' => {
+    'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],
+    'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],
+  },
+  'XAN_UL' => [
+    {'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    {'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ],
+  'XAN_LOG' => {
+    'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],
+    'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],
+  },
+
+};

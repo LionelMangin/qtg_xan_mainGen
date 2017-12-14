@@ -1,0 +1,242 @@
+
+$PRODUCTS = {
+  'XAN_BACK' => {
+
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      'tg_builderXML',
+      'tg_busExpr',
+      'tg_expreval',
+      'tg_utils_disp',
+      'tg_utils_gen',
+      'bry_sax2bus',
+      'qbz_batchsync',
+      'qbz_callecaw',
+      'qbz_dbmgrbatch',
+      'bry_batch',
+    ],
+
+    'dictionaries' => [
+      'bry_dic',
+    ],
+
+    'dic' => [
+      'xc_jdvimp/dic/',
+	  'bry_ddex/dic/',
+      'qbz_ctldmdhcc/dic/',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+	
+    'lib' => [
+      'tg_rabbitmq/extlib/lib/librabbitmq.so',
+      'tg_rabbitmq/extlib/lib/librabbitmq.so.4',
+      'tg_rabbitmq/extlib/lib/librabbitmq.so.4.2.1',
+    ],
+    'modules' => [
+	
+		'bry_ctldmdgen',
+		'bry_ctlsvmgen',
+		'bry_dbAm',
+		'bry_dbMod',
+		'bry_dbOthers',
+		'bry_dbQbz',
+		'bry_db',
+		'bry_ddexcrawl',
+		'bry_ddexinit',
+		'bry_ddexsax',
+		'bry_ddex',
+		'bry_ioda',
+		'bry_jdv',
+		'bry_mails',
+		'bry_sax2bus',
+		'bry_staging',
+		'ema_libemv',
+		'ema_npm_controls',
+		'npm_codec',
+		'qbz_activate',
+		'qbz_ctldmdhcc',
+		'qbz_dbmgrcli',
+		'qbz_mpasync',
+		'qbz_rabbitmq',
+		'tg_appgui',
+		'tg_auditTextBuilder',
+		'tg_busaccess',
+		'tg_busExpr',
+		'tg_busTplRenderer',
+		'tg_centrcmd',
+		'tg_cliapp',
+		'tg_dbconfig',
+		'tg_db_mysql',
+		'tg_dbtangoptf',
+		'tg_db_tango',
+		'tg_disp',
+		'tg_errorConverter',
+		'tg_expreval',
+		'tg_filesafgen',
+		'tg_hyp',
+		'tg_itgdep',
+		'tg_itgdmd',
+		'tg_itgsvm',
+		'tg_json',
+		'tg_libhttp',
+		'tg_logFileWriter',
+		'tg_logsrv',
+		'tg_logTangoWriter',
+		'tg_mails',
+		'tg_pdfgen',
+		'tg_pdfWriter',
+		'tg_rabbitmq',
+		'tg_safgen',
+		'tg_sesdep',
+		'tg_sesdmdcmd',
+		'tg_sesdmd',
+		'tg_sessvmcmd',
+		'tg_sessvmgui',
+		'tg_sessvm',
+		'tg_seswebdmd',
+		'tg_seswebsvm',
+		'tg_sesxml',
+		'tg_simu',
+		'tg_smtpcli',
+		'tg_sqladmin2',
+		'tg_srvdbtango',
+		'tg_syslogWriter',
+		'tg_tcpdmd',
+		'tg_tcpsvm',
+		'tg_template',
+		'tg_ws',
+		'tg_xml2',
+		'tg_xmlRwSequencer',
+		'tg_xmlrw',
+		'tg_xmlSerializer',
+		'tg_xslToolsPlugin',
+		'xc_jdvimp',
+		'xc_sfbulk',
+		'xc_sfextract',
+		'xs_ddexValid'
+    ],   
+
+    'config' => [
+      	'texp',
+		'xan_cfgBack',
+    ],
+
+    'config/npm' => [
+		'xc_jdvimp/config/qobuzOrder_codec.xml',
+		'xc_jdvimp/config/qobuzOrder.xsd',
+    ],
+	
+    'config/ingestion' => [
+       'bry_ddexsax/config/',
+	],   
+	
+    'config/std' => [
+		'tg_ws/config/runtime/conversion.xsl',
+    ],
+
+  },
+  'XAN_UL' => {
+
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      'tg_builderXML',
+      'tg_busExpr',
+      'tg_expreval',
+      'tg_utils_disp',
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+	'tg_hyp',
+	'tg_cliapp',
+	'tg_expreval',
+	'tg_json',
+	'tg_disp',
+	'tg_sessvm',
+	'tg_sessvmcmd',
+	'tg_sessvmgui',
+	'tg_itgsvm',
+	'tg_tcpsvm',
+	'tg_sesdmd',
+	'tg_sesdmdcmd',
+	'tg_tcpdmd',
+	'tg_centrcmd',
+	'tg_appgui',
+	'tg_sqladmin2',
+	'tg_db_mysql',
+
+	'bry_ctlsvmgen',
+	'qbz_userLibrary',
+	'qbz_dbUL',
+    ],   
+
+    'config' => [
+      	'texp',
+	'xan_cfgFront',
+    ],
+
+  },
+
+  'XAN_LOG' => {
+
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'binaries' => [
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'commands' => [
+      'texp',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+        'tg_hyp',
+    ],   
+
+    'config' => [
+      	'texp',
+	'xan_cfgLOG',
+    ],
+
+  },
+
+};

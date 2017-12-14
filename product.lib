@@ -1,0 +1,97 @@
+#
+# Fichier de dependances de compilation
+
+# utilisation de STL_PORT: positionner cette variable à 1
+$USE_STL_PORT=1;
+
+$debug = 0;
+$ISSHARED = 1; # 1 pour une librairie partagee
+
+$TANGO64 = 1;
+
+@DEPEND         = ("tg_sys", "tg_cliapp");
+@EXTRA_INC              = ( );
+$EXTRA_FLAGS    = " -D __ENG__ -D __EMPTY_STRING_IS_NULL__ -D __OPENSSL__ "; # -D__PADSS_TEST__ ";
+
+# la base par defaut (les produit sans base doivent le forcer)
+@DATABASE               = (); # ('mysql','oracle','db2')
+
+@FEATURES      = ('ssl', 'module');   # ('ssl')
+
+$WITH_PUT=1;
+#partie des exec.lib
+@LINK_DEP       = ( );   # je ne remet pas ceux de @DEPEND
+
+@EXTRA_LIB      = ();
+@LST_LIB        = ();
+
+$LIBXML_PREFIX = "/usr";
+$LIBXSLT_PREFIX = "/usr";
+$RABBITMQ_PREFIX = "/home/gen/gen_tango/XAN_01_01_00/tg_rabbitmq/extlib";
+$SSL_INC = "/usr/include";
+$SSL_LIB = "/usr/lib64";
+
+if (defined $LIBXML2_STATICALLY_LINKED)
+{
+  $EXTRA_FLAGS .= "  `$LIBXML_PREFIX/bin/xml2-config --cflags` `$LIBXSLT_PREFIX/bin/xslt-config --cflags` ";
+  $MODLIB .= " $LIBXML_PREFIX/lib/libxml2.a $LIBXSLT_PREFIX/lib/libxslt.a $LIBXSLT_PREFIX/lib/libexslt.a -liconv -lz ";
+}
+else
+{
+  if (defined $LIBICONV_PREFIX)
+  {
+    $MODLIB .= " `$LIBXML_PREFIX/bin/xml2-config --libs` `$LIBXSLT_PREFIX/bin/xslt-config --libs` -lexslt -L$LIBICONV_DIR -liconv";
+    $EXTRA_FLAGS .= "  `$LIBXML_PREFIX/bin/xml2-config --cflags` `$LIBXSLT_PREFIX/bin/xslt-config --cflags` -I$LIBICONV_PREFIX/include -D__HAS_ICONV__ ";
+  }
+  else
+  {
+    $MODLIB .= " `$LIBXML_PREFIX/bin/xml2-config --libs` `$LIBXSLT_PREFIX/bin/xslt-config --libs` -lexslt  ";
+    $EXTRA_FLAGS .= "  `$LIBXML_PREFIX/bin/xml2-config --cflags` `$LIBXSLT_PREFIX/bin/xslt-config --cflags` ";
+  }
+
+  if (($OS eq "NSOS") or ($OS eq "cygwin" and defined $NSOS_WIN))
+  {
+    $MODLIB .= " -lfloss ";
+  }
+}
+
+$TG_SYS_FULL_UTF8 = 1;
+
+# liste de executable àe pas gérer (cela fait surtout reference au produit tg_utils_gen)
+$EXCLUDE  = {
+       'dico_conv'            =>    "",
+       'displayLogTango'      =>    "",
+       'dump'                 =>    "",
+       'ldapCert'             =>    "",
+       'replay'               =>    "",
+       'sendlog'              =>    "",
+       'servgen'              =>    "",
+       'servnull'             =>    "",
+       'simu'                 =>    "",
+       'simu.out'             =>    "",
+       'test_ctrl'            =>    "",
+       'test_dom'             =>    "",
+#       'tgcliapp_decode'      =>    "",
+#       'tgcliapp_encode'      =>    "",
+       'cfg2xml'              =>    "",
+       'kill'                 =>    "",
+       'licence'              =>    "",
+       'sleep'                =>    "",
+       'tg_sqlite'            =>    "",
+       'tg_zcat'              =>    "",
+       'tg_lanceur'           =>    "",
+       'test_bushide'         =>    "",
+       'eg_codec'             =>    "",
+       'test'                 =>    "",
+       'apiDb'                =>    "",
+       'sha2_test'            =>    "",
+       'TU_codec'            =>    "",
+       'eg_type'            =>    "",
+       'tg_backupedLoader'    => "",
+       'checkDicValidity'    => "",
+       'tgHardwareId'    => "",
+};
+
+
+1;
+
