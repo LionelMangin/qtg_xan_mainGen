@@ -255,8 +255,6 @@ $PRODUCTS = {
         'fid_convop',
         'fid_offercount',
         'qbz_ctldmdpaypal',
-        'qbz_dbUL',
-        'qbz_userLibrary',
         'tg_appgui',
         'tg_busExpr',
         'tg_busTplRenderer',
