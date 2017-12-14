@@ -1,14 +1,21 @@
 $EXTRA_SCRIPT = {
-  'XAN_BACK' => {
-    'stripCVS.sh' => [
+  'XAN_BACK' => [
+    {'stripCVS.sh' => [
       '$GENDIR',
       '$LIVDIR',
-    ],
-    'logCfgFile.sh' => [
+    ],},
+    {'logCfgFile.sh' => [
       '$GENDIR',
       '$LIVDIR',
-    ],
-  },
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ],
   'XAN_UL' => [
     {'stripCVS.sh' => [
       '$GENDIR',
@@ -26,15 +33,38 @@ $EXTRA_SCRIPT = {
        '"xtar.txt"',
      ],},
   ],
-  'XAN_LOG' => {
-    'stripCVS.sh' => [
+  'XAN_XB' => [
+    {'stripCVS.sh' => [
       '$GENDIR',
       '$LIVDIR',
-    ],
-    'logCfgFile.sh' => [
+    ],},
+    {'logCfgFile.sh' => [
       '$GENDIR',
       '$LIVDIR',
-    ],
-  },
-
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ],
+  'XAN_LOG' => [
+    {'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    {'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ], 
 };
