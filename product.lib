@@ -1,7 +1,7 @@
 #
 # Fichier de dependances de compilation
 
-# utilisation de STL_PORT: positionner cette variable à 1
+# utilisation de STL_PORT: positionner cette variable a 1
 $USE_STL_PORT=1;
 
 $debug = 0;
@@ -27,9 +27,9 @@ $WITH_PUT=1;
 
 $LIBXML_PREFIX = "/usr";
 $LIBXSLT_PREFIX = "/usr";
-$RABBITMQ_PREFIX = "/home/gen/gen_tango/XAN_01_01_00/tg_rabbitmq/extlib";
 $SSL_INC = "/usr/include";
 $SSL_LIB = "/usr/lib64";
+$RABBITMQ_PREFIX = "../tg_rabbitmq/extlib";
 
 if (defined $LIBXML2_STATICALLY_LINKED)
 {
@@ -57,7 +57,7 @@ else
 
 $TG_SYS_FULL_UTF8 = 1;
 
-# liste de executable àe pas gérer (cela fait surtout reference au produit tg_utils_gen)
+# liste de executable pas gere (cela fait surtout reference au produit tg_utils_gen)
 $EXCLUDE  = {
        'dico_conv'            =>    "",
        'displayLogTango'      =>    "",
