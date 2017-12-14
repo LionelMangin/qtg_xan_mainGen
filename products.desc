@@ -69,6 +69,7 @@ $PRODUCTS = {
 		'qbz_dbmgrcli',
 		'qbz_mpasync',
 		'qbz_rabbitmq',
+		'qbz_reingest',
 		'tg_appgui',
 		'tg_auditTextBuilder',
 		'tg_busaccess',
@@ -146,6 +147,7 @@ $PRODUCTS = {
     ],
 
   },
+
   'XAN_UL' => {
 
     '..' => [
@@ -202,6 +204,136 @@ $PRODUCTS = {
       	'texp',
 	'xan_cfgFront',
     ],
+
+  },
+
+  'XAN_XB' => {
+
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      'servstat',
+      'tg_builderXML',
+      'tg_busExpr',
+      'tg_controlUtils',
+      'tg_expreval',
+      'tg_utils_disp',
+      'tg_utils_gen',
+      'bry_sax2bus',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'dic' => [
+      'bry_ctldmdadyen/dic/',
+      'qbz_ctldmdpaypal/dic/',
+      'bry_ctldmdpaypal/dic/',
+    ],
+
+    'commands' => [
+      'texp',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+
+        'bry_ctldmdadyen',
+        'bry_ctldmdgen',
+        'bry_ctldmdpaypal',
+        'bry_ctldmdpbox',
+        'bry_ctlsvmgen',
+        'bry_mails',
+        'cat_convop',
+        'fid_aut',
+        'fid_convop',
+        'fid_offercount',
+        'qbz_ctldmdpaypal',
+        'qbz_dbUL',
+        'qbz_userLibrary',
+        'tg_appgui',
+        'tg_busExpr',
+        'tg_busTplRenderer',
+        'tg_centrcmd',
+        'tg_cliapp',
+        'tg_control',
+        'tg_dbconfig',
+        'tg_db_mysql',
+        'tg_dbtangoptf',
+        'tg_db_tango',
+        'tg_disp',
+        'tg_expreval',
+        'tg_filesafgen',
+        'tg_hyp',
+        'tg_itgsvm',
+        'tg_json',
+        'tg_libhttp',
+        'tg_mails',
+        'tg_sesdmdcmd',
+        'tg_sesdmd',
+        'tg_sessvmcmd',
+        'tg_sessvmgui',
+        'tg_sessvm',
+        'tg_seswebdmd',
+        'tg_simu',
+        'tg_smtpcli',
+        'tg_sqladmin2',
+        'tg_tcpdmd',
+        'tg_tcpsvm',
+        'tg_template',
+        'tg_utils_disp',
+        'tg_utils_gen',
+        'tg_wsruntime',
+        'tg_xml2',
+        'xb_auth',
+        'xb_ctldmdibrandrest',
+        'xb_dbBk',
+        'xb_dbOrder',
+        'xb_db',
+        'xb_fidaut',
+        'xb_ibrandRest',
+        'xb_ibrandXo',
+        'xb_mdpTypeCardAdyen',
+        'xb_mdpTypeCardOgone',
+        'xb_mdpTypeCardPaybox',
+        'xb_mdpTypeCredit',
+        'xb_mdpTypeFid',
+        'xb_mdpTypeFree',
+        'xb_mdpTypeIdealAdyen',
+        'xb_mdpTypeMock',
+        'xb_mdpTypePaypal',
+        'xb_mdpTypePaypalSoap',
+        'xb_mdpTypeSepaAdyen',
+        'xb_mdpTypeVoucher',
+        'xb_notif',
+        'xb_order',
+        'xb_rclient',
+    ],   
+
+    'webservice' => [
+        'bryws_adyen',
+        'qbzws_paypal',
+    ],
+
+    'config' => [
+      	'texp',
+	'xan_cfgFront',
+    ],
+
+    'config/std' => [
+	'tg_ws/config/runtime/conversion.xsl',
+    ],
+
+    'config/chain' => [
+        'xb_order/config/order.chain',
+    ],
+
 
   },
 
