@@ -321,7 +321,7 @@ $PRODUCTS = {
 
     'config' => [
       	'texp',
-	'xan_cfgFront',
+	'xan_cfgXB',
     ],
 
     'config/std' => [
