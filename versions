@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2017-12-14T16:16:54+01:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2017-12-15T10:35:38+01:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -100,8 +100,6 @@
   [ 'xc_jdvimp',            'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_jdvimp'                 ],
 
   # Other components
-  [ 'xan_cfgBack',          'V01_28',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
-  [ 'xan_cfgLOG',           'V00_01',          'R', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgLOG'                ],
   [ 'xan_scripts',          'V01_04',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_scripts'               ],
 
   # Tango components
@@ -151,11 +149,6 @@
 
   # Tango components
   [ 'qbz_userLibrary',      'V00_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_userLibrary'           ],
-
-  # Other components
-  [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
-
-  # Tango components
   [ 'bry_acesb',            'V01_40',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_acesb'            ],
   [ 'bry_ctldmdgen',        'V01_20',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdgen'        ],
   [ 'bry_dbQbz',            'V01_08',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbQbz'                 ],
@@ -202,11 +195,12 @@
   [ 'xb_mdpTypeMock',       'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeMock'            ],
   [ 'xb_mdpTypePaypalSoap', 'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypePaypalSoap'      ],
   [ 'xb_notif',             'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_notif'                  ],
+  [ 'qbz_mpasync',          'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_mpasync'               ],
 
   # Other components
+  [ 'xan_cfgBack',          'V01_28',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
   [ 'xan_cfgXB',            'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgXB'                 ],
-
-  # Tango components
-  [ 'qbz_mpasync',          'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_mpasync'               ],
+  [ 'xan_cfgJDV',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgJDV'                ],
+  [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
 
 );
