@@ -66,5 +66,22 @@ $EXTRA_SCRIPT = {
        '$prodinfo->{"version"}',
        '"xtar.txt"',
      ],},
-  ], 
+  ],
+  'XAN_JDV' => [
+    {'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    {'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ],
 };
