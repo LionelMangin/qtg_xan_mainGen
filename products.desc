@@ -219,6 +219,7 @@ $PRODUCTS = {
       'tg_utils_disp',
       'tg_utils_gen',
       'bry_sax2bus',
+      'xb_ps2alias',
     ],
 
     'dictionaries' => [
@@ -344,7 +345,7 @@ $PRODUCTS = {
 
     'binaries' => [
       'tg_utils_gen',
-      'servstat',
+      'tg_daemon',
     ],
 
     'commands' => [
@@ -357,6 +358,14 @@ $PRODUCTS = {
 
     'modules' => [
         'tg_hyp',
+	'tg_cliapp',
+        'tg_daemon',
+	'tg_logger',
+	'tg_logTangoWriter',
+	'tg_logFileWriter',
+	'tg_statServer',
+	'tg_traceSrv',
+	'xan_statCollector',
     ],   
 
     'config' => [

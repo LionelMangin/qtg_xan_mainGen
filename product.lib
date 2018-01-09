@@ -11,7 +11,7 @@ $TANGO64 = 1;
 
 @DEPEND         = ("tg_sys", "tg_cliapp");
 @EXTRA_INC              = ( );
-$EXTRA_FLAGS    = " -D __ENG__ -D __EMPTY_STRING_IS_NULL__ -D __OPENSSL__ "; # -D__PADSS_TEST__ ";
+$EXTRA_FLAGS    = " -D __ENG__ -D __EMPTY_STRING_IS_NULL__ -D __REMOTE_ADDRESS_INFO__ -D __OPENSSL__ "; # -D__PADSS_TEST__ ";
 
 # la base par defaut (les produit sans base doivent le forcer)
 @DATABASE               = (); # ('mysql','oracle','db2')
