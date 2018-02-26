@@ -122,7 +122,10 @@ $PRODUCTS = {
 		'xc_jdvimp',
 		'xc_sfbulk',
 		'xc_sfextract',
-		'xs_ddexValid'
+		'xs_ddexValid',
+		'qbz_dbPrice',
+		'qbz_genPrice',
+
     ],   
 
     'config' => [
