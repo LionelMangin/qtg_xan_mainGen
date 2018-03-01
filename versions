@@ -106,7 +106,7 @@
   [ 'bry_ctldmdadyen',      'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdadyen'           ],
   [ 'bry_ctldmdogo',        'V01_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdogo'        ],
   [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpaypal'          ],
-  [ 'bry_ctldmdpbox',       'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpbox'            ],
+  [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpbox'            ],
   [ 'tg_db_postgres',       'V01_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_db_postgres'      ],
   [ 'tg_control',           'V01_44',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_control'          ],
 
