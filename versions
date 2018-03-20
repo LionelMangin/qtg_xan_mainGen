@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-03-13T17:26:03+01:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-03-15T18:04:06+01:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -12,7 +12,7 @@
 @versions = (
 
   # Tango components
-  [ 'tg_sys',               'V06_20_10COM_14', 'R', 'l', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sys'              ],
+  [ 'tg_sys',               'V06_20_10COM_15', 'R', 'l', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sys'              ],
   [ 'tg_expreval',          'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_expreval'         ],
   [ 'tg_disp',              'V06_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_disp'             ],
   [ 'tg_hyp',               'V04_35',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_hyp'              ],
@@ -29,7 +29,7 @@
   [ 'tg_logsrv',            'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logsrv'           ],
   [ 'tg_smtpcli',           'V01_06',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_smtpcli'          ],
   [ 'tg_tcpsvm',            'V02_55',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_tcpsvm'           ],
-  [ 'tg_tcpdmd',            'V01_64',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_tcpdmd'           ],
+  [ 'tg_tcpdmd',            'V01_64COM_01',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_tcpdmd'           ],
   [ 'tg_sesdmd',            'V02_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sesdmd'           ],
   [ 'tg_sessvm',            'V01_72',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sessvm'           ],
   [ 'tg_simu',              'V02_19',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_simu'             ],
@@ -83,7 +83,7 @@
   [ 'bry_jdv',              'V02_00_01',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_jdv'                   ],
 
   # Other components
-  [ 'bry_dic',              'V01_44',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
+  [ 'bry_dic',              'V01_46',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
 
   # Tango components
   [ 'bry_sax2bus',          'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_sax2bus'          ],
@@ -198,7 +198,7 @@
   [ 'qbz_mpasync',          'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_mpasync'               ],
 
   # Other components
-  [ 'xan_cfgBack',          'V01_34',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
+  [ 'xan_cfgBack',          'V01_34_01',       '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
   [ 'xan_cfgXB',            'V00_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgXB'                 ],
   [ 'xan_cfgJDV',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgJDV'                ],
   [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
@@ -219,5 +219,10 @@
   [ 'tg_logFileWriter',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logFileWriter'    ],
   [ 'tg_logTangoWriter',    'V01_01COM_02',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logTangoWriter'   ],
   [ 'tg_traceSrv',          'V01_02COM_02',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_traceSrv'         ],
+  [ 'qbz_filesaf',          '',                'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_filesaf'               ],
+  [ 'qbz_factl',            'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_factl'                 ],
+
+  # Batch components
+  [ 'qbz_faext',            'V01_00',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_faext'                 ],
 
 );

@@ -17,6 +17,7 @@ $PRODUCTS = {
       'qbz_callecaw',
       'qbz_dbmgrbatch',
       'bry_batch',
+      'qbz_faext',
     ],
 
     'dictionaries' => [
@@ -67,6 +68,7 @@ $PRODUCTS = {
 		'qbz_activate',
 		'qbz_ctldmdhcc',
 		'qbz_dbmgrcli',
+		'qbz_factl',
 		'qbz_mpasync',
 		'qbz_rabbitmq',
 		'qbz_reingest',
