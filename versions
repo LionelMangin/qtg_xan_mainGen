@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-03-30T14:55:57+02:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-04-05T11:51:49+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -34,6 +34,7 @@
   [ 'tg_sessvm',            'V01_72',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sessvm'           ],
   [ 'tg_simu',              'V02_19',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_simu'             ],
   [ 'tg_batch',             'V02_14',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_batch'            ],
+  [ 'tg_daemon',            'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_daemon'           ],
   [ 'texp',                 'V02_31',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'texp'                               ],
   [ 'pro_tmp',              'V02_02COM_02',    '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/pro_tmp'             ],
   [ 'bin',                  'V02_16COM_07',    '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/bin'                 ],
@@ -60,7 +61,7 @@
   [ 'tg_centrcmd',          'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_centrcmd'         ],
   [ 'tg_db_tango',          'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_db_tango'         ],
   [ 'tg_dbconfig',          'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_dbconfig'         ],
-  [ 'tg_json',              'V02_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_json'             ],
+  [ 'tg_json',              'V02_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_json'             ],
   [ 'tg_dbtangoptf',        'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_dbtangoptf'       ],
   [ 'tg_decryptPwd',        'V01_11',          'R', 'l', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_decryptPwd'       ],
   [ 'tg_errorConverter',    'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_errorConverter'   ],
@@ -75,45 +76,60 @@
   [ 'tg_xslToolsPlugin',    'V01_14',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_xslToolsPlugin'   ],
   [ 'tg_sesdmdcmd',         'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sesdmdcmd'        ],
   [ 'tg_sessvmcmd',         'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sessvmcmd'        ],
-  [ 'ema_npm_controls',     'V02_147',         'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA_NPM/ema_npm_controls'           ],
-  [ 'npm_codec',            'V01_91',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA_NPM/npm_codec'                  ],
-  [ 'bry_db',               'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_db'               ],
-  [ 'bry_dbMod',            'V01_23',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbMod'            ],
-  [ 'bry_dbAm',             'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbAm'                  ],
-  [ 'bry_jdv',              'V02_00_02',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_jdv'                   ],
-
-  # Other components
-  [ 'bry_dic',              'V01_47',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
-
-  # Tango components
-  [ 'bry_sax2bus',          'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_sax2bus'          ],
-  [ 'tg_sqladmin2',         'V01_32',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/moduleTango/tg_sqladmin2'     ],
-  [ 'bry_ctlsvmgen',        'V02_00',          'R', 'l', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctlsvmgen'        ],
-  [ 'ema_libemv',           'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA/ema_libemv'                     ],
   [ 'tg_utils_gen',         'V03_11COM_01',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_utils_gen'        ],
-  [ 'tg_utils_disp',        'V01_06',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_utils_disp'       ],
-  [ 'bry_mails',            'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_mails'                 ],
-  [ 'xc_sfbulk',            'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_sfbulk'                 ],
-  [ 'xc_sfextract',         'V01_08',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_sfextract'              ],
+  [ 'tg_sqladmin2',         'V01_32',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/moduleTango/tg_sqladmin2'     ],
   [ 'tg_pdfgen',            'V01_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_pdfgen'           ],
+  [ 'tg_utils_disp',        'V01_06',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_utils_disp'       ],
   [ 'tg_pdfWriter',         'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_pdfWriter'        ],
-  [ 'xc_jdvimp',            'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_jdvimp'                 ],
-
-  # Other components
-  [ 'xan_scripts',          'V01_06',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_scripts'               ],
-
-  # Tango components
-  [ 'bry_ctldmdadyen',      'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdadyen'           ],
-  [ 'bry_ctldmdogo',        'V01_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdogo'        ],
-  [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpaypal'          ],
-  [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpbox'            ],
-  [ 'tg_db_postgres',       'V01_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_db_postgres'      ],
   [ 'tg_control',           'V01_44',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_control'          ],
 
   # Batch components
   [ 'tg_controlUtils',      'V01_14',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_controlUtils'     ],
 
   # Tango components
+  [ 'tg_restsvm',           'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/moduleTango/tg_restsvm'       ],
+  [ 'tg_db_postgres',       'V01_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_db_postgres'      ],
+  [ 'tg_statServer',        'V01_04COM_02',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_statServer'       ],
+  [ 'tg_traceSrv',          'V01_02COM_02',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_traceSrv'         ],
+  [ 'tg_logger',            'V01_04COM_02',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logger'           ],
+  [ 'tg_logFileWriter',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logFileWriter'    ],
+  [ 'tg_logTangoWriter',    'V01_01COM_02',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logTangoWriter'   ],
+  [ 'tg_wsruntime',         'V01_80_06',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_wsruntime'        ],
+  [ 'tg_rabbitmq',          'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/moduleTango/tg_rabbitmq'      ],
+  [ 'ema_npm_controls',     'V02_147',         'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA_NPM/ema_npm_controls'           ],
+  [ 'npm_codec',            'V01_91',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA_NPM/npm_codec'                  ],
+  [ 'ema_libemv',           'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA/ema_libemv'                     ],
+  [ 'bry_db',               'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_db'               ],
+  [ 'bry_dbMod',            'V01_23',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbMod'            ],
+  [ 'bry_dbAm',             'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbAm'                  ],
+  [ 'bry_dbOthers',         'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbOthers'         ],
+  [ 'bry_dbQbz',            'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbQbz'                 ],
+  [ 'xb_db',                'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_db'                     ],
+  [ 'xb_dbBk',              'V02_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbBk'                   ],
+  [ 'xb_dbOrder',           'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbOrder'                ],
+  [ 'qbz_dbUL',             'V00_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbUL'                  ],
+  [ 'qbz_dbPrice',          'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbPrice'               ],
+  [ 'xan_db',               'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_db'                    ],
+  [ 'bry_jdv',              'V02_00_02',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_jdv'                   ],
+  [ 'bry_sax2bus',          'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_sax2bus'          ],
+  [ 'bry_ctlsvmgen',        'V02_00',          'R', 'l', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctlsvmgen'        ],
+  [ 'bry_mails',            'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_mails'                 ],
+  [ 'xc_sfbulk',            'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_sfbulk'                 ],
+  [ 'xc_sfextract',         'V01_08',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_sfextract'              ],
+  [ 'xc_jdvimp',            'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_jdvimp'                 ],
+
+  # Other components
+  [ 'xan_scripts',          'V01_06',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_scripts'               ],
+
+  # Tango components
+  [ 'bry_ctldmdgen',        'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdgen'        ],
+  [ 'bry_ctldmdadyen',      'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdadyen'           ],
+  [ 'bry_ctldmdogo',        'V01_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdogo'        ],
+  [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpaypal'          ],
+  [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpbox'            ],
+  [ 'qbz_ctldmdhcc',        'V01_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdhcc'             ],
+  [ 'qbz_ctldmdpaypal',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdpaypal/'         ],
+  [ 'xb_ctldmdibrandrest',  'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ctldmdibrandrest'       ],
   [ 'fid_aut',              'V03_81_20_09',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'FID/fid_aut'                        ],
   [ 'fid_convop',           'V01_20',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'FID/fid_convop'                     ],
   [ 'fid_mot',              'V02_06',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'FID/fid_mot'                        ],
@@ -121,8 +137,6 @@
   [ 'cat_convop',           'V00_23_02',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'FID/cat_convop'                     ],
   [ 'bry_staging',          'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_staging'               ],
   [ 'xb_auth',              'V02_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_auth'                   ],
-  [ 'xb_db',                'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_db'                     ],
-  [ 'xb_dbBk',              'V02_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbBk'                   ],
   [ 'xb_fidaut',            'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_fidaut'                 ],
   [ 'xb_mdpTypeCardAdyen',  'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeCardAdyen'       ],
   [ 'xb_mdpTypeCardOgone',  'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeCardOgone'       ],
@@ -131,37 +145,22 @@
   [ 'xb_mdpTypeFid',        'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeFid'             ],
   [ 'xb_mdpTypeFree',       'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeFree'            ],
   [ 'xb_mdpTypeIdealAdyen', 'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeIdealAdyen'      ],
+  [ 'xb_mdpTypeMock',       'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeMock'            ],
   [ 'xb_mdpTypePaypal',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypePaypal'          ],
+  [ 'xb_mdpTypePaypalSoap', 'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypePaypalSoap'      ],
   [ 'xb_mdpTypeSepaAdyen',  'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeSepaAdyen'       ],
   [ 'xb_mdpTypeVoucher',    'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeVoucher'         ],
   [ 'xb_order',             'V02_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_order'                  ],
   [ 'xb_rclient',           'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_rclient'                ],
-
-  # Other components
-  [ 'bryws_adyen',          'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bryws_adyen'               ],
-
-  # Tango components
-  [ 'tg_wsruntime',         'V01_80_06',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_wsruntime'        ],
-  [ 'qbz_dbUL',             'V00_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbUL'                  ],
-
-  # Other components
-  [ 'qbz_dic',              'V01_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dic'                   ],
-
-  # Tango components
   [ 'qbz_userLibrary',      'V00_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_userLibrary'           ],
   [ 'bry_acesb',            'V01_40',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_acesb'            ],
-  [ 'bry_ctldmdgen',        'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdgen'        ],
-  [ 'bry_dbQbz',            'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbQbz'                 ],
   [ 'qbz_activate',         'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_activate'              ],
-  [ 'qbz_ctldmdhcc',        'V01_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdhcc'             ],
   [ 'qbz_rabbitmq',         'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_rabbitmq'              ],
   [ 'bry_ddexcrawl',        'V01_13',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexcrawl'             ],
   [ 'bry_ddexsax',          'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexsax'               ],
   [ 'xs_ddexValid',         'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xs_ddexValid'              ],
   [ 'bry_ddex',             'V02_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddex'                  ],
   [ 'bry_ioda',             'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ioda'                  ],
-  [ 'tg_rabbitmq',          'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/moduleTango/tg_rabbitmq'      ],
-  [ 'bry_dbOthers',         'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbOthers'         ],
   [ 'bry_ddexinit',         'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexinit'              ],
 
   # Batch components
@@ -170,59 +169,48 @@
 
   # Other components
   [ 'script_qobuz',         '',                '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', ''                                   ],
-  [ 'qbzws_paypal',         'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbzws_paypal/'             ],
-
-  # Tango components
-  [ 'qbz_ctldmdpaypal',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdpaypal/'         ],
 
   # Batch components
   [ 'qbz_batchsync',        'V00_00',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_batchsync'             ],
 
   # Tango components
   [ 'qbz_dbmgrcli',         'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbmgrcli'              ],
-  [ 'qbz_dbPrice',          '',                'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbPrice'               ],
-  [ 'qbz_genPrice',         '',                'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_genPrice'              ],
+  [ 'qbz_genPrice',         'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_genPrice'              ],
 
   # Batch components
   [ 'qbz_dbmgrbatch',       'V00_03',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbmgrbatch'            ],
 
   # Tango components
   [ 'qbz_reingest',         'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_reingest'              ],
-  [ 'xb_ctldmdibrandrest',  'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ctldmdibrandrest'       ],
   [ 'xb_ibrandRest',        'V00_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ibrandRest'             ],
   [ 'xb_ibrandXo',          'V00_04',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ibrandXo'               ],
-  [ 'xb_dbOrder',           'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbOrder'                ],
-  [ 'xb_mdpTypeMock',       'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypeMock'            ],
-  [ 'xb_mdpTypePaypalSoap', 'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_mdpTypePaypalSoap'      ],
   [ 'xb_notif',             'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_notif'                  ],
   [ 'qbz_mpasync',          'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_mpasync'               ],
-
-  # Other components
-  [ 'xan_cfgBack',          'V01_37',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
-  [ 'xan_cfgXB',            'V00_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgXB'                 ],
-  [ 'xan_cfgJDV',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgJDV'                ],
-  [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
 
   # Batch components
   [ 'xb_ps2alias',          'V00_02',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ps2alias'               ],
 
   # Tango components
   [ 'xan_statCollector',    'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_statCollector'         ],
-
-  # Other components
-  [ 'xan_cfgLOG',           'V00_03',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgLOG'                ],
-
-  # Tango components
-  [ 'tg_daemon',            'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_daemon'           ],
-  [ 'tg_statServer',        'V01_04COM_02',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_statServer'       ],
-  [ 'tg_logger',            'V01_04COM_02',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logger'           ],
-  [ 'tg_logFileWriter',     'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logFileWriter'    ],
-  [ 'tg_logTangoWriter',    'V01_01COM_02',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_logTangoWriter'   ],
-  [ 'tg_traceSrv',          'V01_02COM_02',    'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_traceSrv'         ],
   [ 'qbz_filesaf',          'V00_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_filesaf'               ],
   [ 'qbz_factl',            'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_factl'                 ],
 
   # Batch components
   [ 'qbz_faext',            'V01_00',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_faext'                 ],
+
+  # Tango components
+  [ 'xan_alexa',            'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_alexa'                 ],
+
+  # Other components
+  [ 'xan_cfgBack',          'V01_37',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
+  [ 'xan_cfgAPI',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgAPI'                ],
+  [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
+  [ 'xan_cfgJDV',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgJDV'                ],
+  [ 'xan_cfgLOG',           'V00_03',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgLOG'                ],
+  [ 'xan_cfgXB',            'V00_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgXB'                 ],
+  [ 'qbz_dic',              'V01_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dic'                   ],
+  [ 'bry_dic',              'V01_47',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
+  [ 'bryws_adyen',          'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bryws_adyen'               ],
+  [ 'qbzws_paypal',         'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbzws_paypal/'             ],
 
 );

@@ -69,6 +69,7 @@ $PRODUCTS = {
 		'qbz_ctldmdhcc',
 		'qbz_dbmgrcli',
 		'qbz_factl',
+		'qbz_filesaf',
 		'qbz_mpasync',
 		'qbz_rabbitmq',
 		'qbz_reingest',
@@ -481,4 +482,67 @@ $PRODUCTS = {
 	
   },
 
+  'XAN_API' => {
+
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      'tg_builderXML',
+      'tg_busExpr',
+      'tg_expreval',
+      'tg_utils_disp',
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+	'tg_hyp',
+	'tg_cliapp',
+	'tg_expreval',
+	'tg_json',
+	'tg_disp',
+	'tg_sessvm',
+	'tg_seswebsvm',
+	'tg_sesdmd',
+	'tg_tcpsvm',
+	'tg_tcpdmd',
+	'tg_sesdmdcmd',
+	'tg_sessvmcmd',
+	'tg_centrcmd',
+	'tg_db_mysql',
+	'tg_libhttp',
+	'tg_restsvm',
+
+#	'bry_ctlsvmgen',
+	'xan_db',
+	'xan_alexa',
+    ],   
+
+    'config' => [
+      	'texp',
+	'xan_cfgAPI',
+    ],
+
+    'webservice' => [
+        'xan_alexa/config/alexa',
+    ],
+
+  },
 };
+
+# vim: ft=perl
