@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-04-05T11:51:49+02:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-04-05T17:23:37+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -174,7 +174,7 @@
   [ 'qbz_batchsync',        'V00_00',          'R', 'e', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_batchsync'             ],
 
   # Tango components
-  [ 'qbz_dbmgrcli',         'V01_07',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbmgrcli'              ],
+  [ 'qbz_dbmgrcli',         'V01_08',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dbmgrcli'              ],
   [ 'qbz_genPrice',         'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_genPrice'              ],
 
   # Batch components
@@ -192,7 +192,7 @@
 
   # Tango components
   [ 'xan_statCollector',    'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_statCollector'         ],
-  [ 'qbz_filesaf',          'V00_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_filesaf'               ],
+  [ 'qbz_filesaf',          'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_filesaf'               ],
   [ 'qbz_factl',            'V01_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_factl'                 ],
 
   # Batch components
