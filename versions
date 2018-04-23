@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-04-23T12:51:52+02:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-04-23T15:49:41+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -119,7 +119,7 @@
   [ 'xc_jdvimp',            'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xc_jdvimp'                 ],
 
   # Other components
-  [ 'xan_scripts',          'V01_06',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_scripts'               ],
+  [ 'xan_scripts',          'V01_07',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_scripts'               ],
 
   # Tango components
   [ 'bry_ctldmdgen',        'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdgen'        ],
@@ -202,7 +202,7 @@
   [ 'xan_alexa',            'V00_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_alexa'                 ],
 
   # Other components
-  [ 'xan_cfgBack',          'V01_39',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
+  [ 'xan_cfgBack',          'V01_40',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgBack'               ],
   [ 'xan_cfgAPI',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgAPI'                ],
   [ 'xan_cfgFront',         'V01_11',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgFront'              ],
   [ 'xan_cfgJDV',           'V00_01',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgJDV'                ],
