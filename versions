@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-05-18T09:09:50+02:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-05-25T11:02:13+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -100,10 +100,10 @@
   [ 'npm_codec',            'V01_91',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA_NPM/npm_codec'                  ],
   [ 'ema_libemv',           'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'EMA/ema_libemv'                     ],
   [ 'bry_db',               'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_db'               ],
-  [ 'bry_dbMod',            'V01_23',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbMod'            ],
+  [ 'bry_dbMod',            'V01_24',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbMod'            ],
   [ 'bry_dbAm',             'V01_09',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbAm'                  ],
   [ 'bry_dbOthers',         'V00_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dbOthers'         ],
-  [ 'bry_dbQbz',            'V01_10',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbQbz'                 ],
+  [ 'bry_dbQbz',            'V01_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_dbQbz'                 ],
   [ 'xb_db',                'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_db'                     ],
   [ 'xb_dbBk',              'V02_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbBk'                   ],
   [ 'xb_dbOrder',           'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_dbOrder'                ],
@@ -127,7 +127,7 @@
   [ 'bry_ctldmdogo',        'V01_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_ctldmdogo'        ],
   [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpaypal'          ],
   [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ctldmdpbox'            ],
-  [ 'qbz_ctldmdhcc',        'V01_05',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdhcc'             ],
+  [ 'qbz_ctldmdhcc',        'V01_06',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdhcc'             ],
   [ 'qbz_ctldmdpaypal',     'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_ctldmdpaypal/'         ],
   [ 'xb_ctldmdibrandrest',  'V00_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_ctldmdibrandrest'       ],
   [ 'fid_aut',              'V03_81_20_09',    'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'FID/fid_aut'                        ],
@@ -154,12 +154,12 @@
   [ 'xb_rclient',           'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xb_rclient'                ],
   [ 'qbz_userLibrary',      'V00_11',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_userLibrary'           ],
   [ 'bry_acesb',            'V01_40',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_acesb'            ],
-  [ 'qbz_activate',         'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_activate'              ],
+  [ 'qbz_activate',         'V02_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_activate'              ],
   [ 'qbz_rabbitmq',         'V01_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_rabbitmq'              ],
   [ 'bry_ddexcrawl',        'V01_13',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexcrawl'             ],
-  [ 'bry_ddexsax',          'V02_01',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexsax'               ],
-  [ 'xs_ddexValid',         'V02_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xs_ddexValid'              ],
-  [ 'bry_ddex',             'V02_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddex'                  ],
+  [ 'bry_ddexsax',          'V02_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexsax'               ],
+  [ 'xs_ddexValid',         'V02_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xs_ddexValid'              ],
+  [ 'bry_ddex',             'V02_03',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddex'                  ],
   [ 'bry_ioda',             'V02_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ioda'                  ],
   [ 'bry_ddexinit',         'V01_02',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bry_ddexinit'              ],
 
@@ -209,7 +209,7 @@
   [ 'xan_cfgLOG',           'V00_03',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgLOG'                ],
   [ 'xan_cfgXB',            'V00_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/xan_cfgXB'                 ],
   [ 'qbz_dic',              'V01_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbz_dic'                   ],
-  [ 'bry_dic',              'V01_49',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
+  [ 'bry_dic',              'V01_50',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/lot0/bry_dic'              ],
   [ 'bryws_adyen',          'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/bryws_adyen'               ],
   [ 'qbzws_paypal',         'V01_00',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'ALLBRARY/qbzws_paypal/'             ],
 
