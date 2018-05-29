@@ -3,7 +3,7 @@
 # $RCSfile$ #
 # $Revision$ #
 # #(@) $Name$ #
-#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-05-28T09:59:07+02:00
+#LSC - Project XANDRIE - Product XANDRIE_TANGO - Version XAN_01_04_00 - 2018-05-29T09:44:45+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -47,7 +47,7 @@
   [ 'tg_installer',         'V01_37_01',       '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_installer'        ],
   [ 'tg_appgui',            'V03_00_02',       'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_appgui'           ],
   [ 'tg_builderXML',        'V01_13',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_builderXML'       ],
-  [ 'tg_filesafgen',        'V01_13',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_filesafgen'       ],
+  [ 'tg_filesafgen',        'V01_14',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_filesafgen'       ],
   [ 'tg_sessvmgui',         'V01_00',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sessvmgui'        ],
   [ 'tg_sesxml',            'V02_21',          'R', 'm', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/tg_sesxml'           ],
   [ 'pro_db',               'V01_02',          '-', '-', ':pserver:tango@jupiter.lusis:12401/lusis', 'TANGO/ptfTango/pro_db'              ],
