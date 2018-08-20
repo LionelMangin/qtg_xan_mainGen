@@ -277,12 +277,14 @@ $PRODUCTS = {
         'tg_json',
         'tg_libhttp',
         'tg_mails',
+        'tg_restsvm',
         'tg_sesdmdcmd',
         'tg_sesdmd',
         'tg_sessvmcmd',
         'tg_sessvmgui',
         'tg_sessvm',
         'tg_seswebdmd',
+        'tg_seswebsvm',
         'tg_simu',
         'tg_smtpcli',
         'tg_sqladmin2',
@@ -293,6 +295,7 @@ $PRODUCTS = {
         'tg_utils_gen',
         'tg_wsruntime',
         'tg_xml2',
+        'xan_ctldmdtaxcloud',
         'xb_auth',
         'xb_ctldmdibrandrest',
         'xb_dbBk',
@@ -321,6 +324,10 @@ $PRODUCTS = {
     'webservice' => [
         'bryws_adyen',
         'qbzws_paypal',
+    ],
+
+    'webservice/rest' => [
+        'xb_order/config/rest',
     ],
 
     'config' => [
@@ -492,6 +499,7 @@ $PRODUCTS = {
       'tg_builderXML',
       'tg_busExpr',
       'tg_expreval',
+      'tg_filesafUtils',
       'tg_utils_disp',
       'tg_utils_gen',
       'servstat',
@@ -527,10 +535,14 @@ $PRODUCTS = {
 	'tg_db_mysql',
 	'tg_libhttp',
 	'tg_restsvm',
+	'tg_filesafgen',
+	'tg_filesafwriter',
 
 #	'bry_ctlsvmgen',
 	'xan_db',
 	'xan_alexa',
+	'xan_authenticate',
+	'xan_reportStreaming',
     ],   
 
     'config' => [
@@ -540,6 +552,7 @@ $PRODUCTS = {
 
     'webservice' => [
         'xan_alexa/config/alexa',
+        'xan_reportStreaming/config/stream-report',
     ],
 
   },
