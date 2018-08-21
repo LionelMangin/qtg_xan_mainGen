@@ -324,9 +324,6 @@ $PRODUCTS = {
     'webservice' => [
         'bryws_adyen',
         'qbzws_paypal',
-    ],
-
-    'webservice/rest' => [
         'xb_order/config/rest',
     ],
 
