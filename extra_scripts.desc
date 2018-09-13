@@ -101,6 +101,23 @@ $EXTRA_SCRIPT = {
        '"xtar.txt"',
      ],},
   ],
+  'XAN_SR' => [
+    {'stripCVS.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    {'logCfgFile.sh' => [
+      '$GENDIR',
+      '$LIVDIR',
+    ],},
+    { 'pack.sh' => [
+       '$GENDIR',
+       '$LIVDIR',
+       '$prodinfo->{"product"}',
+       '$prodinfo->{"version"}',
+       '"xtar.txt"',
+     ],},
+  ],
 };
 
 # vim: ft=perl
