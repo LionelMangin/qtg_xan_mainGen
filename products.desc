@@ -126,6 +126,7 @@ $PRODUCTS = {
 		'xc_sfbulk',
 		'xc_sfextract',
 		'xs_ddexValid',
+		'qbz_alert',
 		'qbz_dbPrice',
 		'qbz_genPrice',
 
