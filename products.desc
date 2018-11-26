@@ -88,6 +88,7 @@ $PRODUCTS = {
 		'tg_errorConverter',
 		'tg_expreval',
 		'tg_filesafgen',
+		'tg_filesafwriter',
 		'tg_hyp',
 		'tg_itgdep',
 		'tg_itgdmd',
@@ -226,6 +227,7 @@ $PRODUCTS = {
       'tg_utils_disp',
       'tg_utils_gen',
       'bry_sax2bus',
+      'xan_jdvUtils',
       'xb_ps2alias',
     ],
 
@@ -273,6 +275,7 @@ $PRODUCTS = {
         'tg_disp',
         'tg_expreval',
         'tg_filesafgen',
+        'tg_filesafwriter',
         'tg_hyp',
         'tg_itgsvm',
         'tg_json',
@@ -497,7 +500,6 @@ $PRODUCTS = {
       'tg_builderXML',
       'tg_busExpr',
       'tg_expreval',
-      'tg_filesafUtils',
       'tg_utils_disp',
       'tg_utils_gen',
       'servstat',
@@ -533,14 +535,9 @@ $PRODUCTS = {
 	'tg_db_mysql',
 	'tg_libhttp',
 	'tg_restsvm',
-	'tg_filesafgen',
-	'tg_filesafwriter',
 
-#	'bry_ctlsvmgen',
 	'xan_db',
 	'xan_alexa',
-	'xan_authenticate',
-	'xan_reportStreaming',
     ],   
 
     'config' => [
@@ -550,7 +547,6 @@ $PRODUCTS = {
 
     'webservice' => [
         'xan_alexa/config/alexa',
-        'xan_reportStreaming/config/stream-report',
     ],
 
   },
@@ -604,9 +600,7 @@ $PRODUCTS = {
 	'tg_filesafgen',
 	'tg_filesafwriter',
 
-#	'bry_ctlsvmgen',
 	'xan_db',
-	'xan_authenticate',
 	'xan_reportStreaming',
     ],   
 
