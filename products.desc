@@ -26,7 +26,7 @@ $PRODUCTS = {
 
     'dic' => [
       'xc_jdvimp/dic/',
-	  'bry_ddex/dic/',
+      'bry_ddex/dic/',
       'qbz_ctldmdhcc/dic/',
     ],
 
@@ -525,6 +525,7 @@ $PRODUCTS = {
 	'tg_json',
 	'tg_disp',
 	'tg_sessvm',
+	'tg_seswebdmd',
 	'tg_seswebsvm',
 	'tg_sesdmd',
 	'tg_tcpsvm',
@@ -535,9 +536,16 @@ $PRODUCTS = {
 	'tg_db_mysql',
 	'tg_libhttp',
 	'tg_restsvm',
+	'tg_tzdb',
+	'tg_xml2',
 
+	'xan_restsvm',
 	'xan_db',
 	'xan_alexa',
+	'xan_authenticate',
+	'xan_reportStreaming',
+	'bry_ctldmdgen',
+	'xan_ctldmdlastfm',
     ],   
 
     'config' => [
@@ -546,7 +554,7 @@ $PRODUCTS = {
     ],
 
     'webservice' => [
-        'xan_alexa/config/alexa',
+        'xan_cfgAPI/webservice/RESTAL',
     ],
 
   },
@@ -599,9 +607,13 @@ $PRODUCTS = {
 	'tg_restsvm',
 	'tg_filesafgen',
 	'tg_filesafwriter',
+	'tg_tzdb',
 
+	'xan_restsvm',
 	'xan_db',
 	'xan_reportStreaming',
+	'qbz_topptf',
+	'qbz_topupdate',
     ],   
 
     'config' => [
@@ -610,7 +622,7 @@ $PRODUCTS = {
     ],
 
     'webservice' => [
-        'xan_reportStreaming/config/stream-report',
+        'xan_cfgSR/webservice/RESTSR',
     ],
 
   },
