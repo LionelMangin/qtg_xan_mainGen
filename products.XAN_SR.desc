@@ -1,0 +1,71 @@
+
+$PRODUCTS = {
+  'XAN_SR' => {
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      # 'tg_builderXML',
+      # 'tg_busExpr',
+      # 'tg_expreval',
+      # 'tg_filesafUtils',
+      # 'tg_utils_disp',
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+      'tg_hyp',
+      'tg_cliapp',
+      'tg_expreval',
+      'tg_json',
+      'tg_disp',
+      'tg_sessvm',
+      'tg_libwebsock',
+      'tg_seswebsvm',
+      'tg_sesdmd',
+      'tg_tcpsvm',
+      'tg_tcpdmd',
+      'tg_sesdmdcmd',
+      'tg_sessvmcmd',
+      'tg_centrcmd',
+      'tg_db_mysql',
+      'tg_libhttp',
+      'tg_restsvm',
+      'tg_filesafgen',
+      'tg_filesafwriter',
+      'tg_tzdb',
+
+      'xan_restsvm',
+      'xan_db',
+      'xan_reportStreaming',
+      'qbz_topptf',
+      'qbz_topupdate',
+    ],
+
+    'config' => [
+      'texp',
+      'xan_cfgSR',
+    ],
+
+    'webservice' => [
+      'xan_cfgSR/webservice/RESTSR',
+    ],
+  },
+};
+
+# vim: ft=perl

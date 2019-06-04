@@ -1,0 +1,61 @@
+
+$PRODUCTS = {
+  'XAN_UL' => {
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      # 'tg_builderXML',
+      # 'tg_busExpr',
+      # 'tg_expreval',
+      # 'tg_utils_disp',
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+      'tg_hyp',
+      'tg_cliapp',
+      'tg_expreval',
+      'tg_json',
+      'tg_disp',
+      'tg_sessvm',
+      'tg_sessvmcmd',
+      'tg_sessvmgui',
+      'tg_itgsvm',
+      'tg_tcpsvm',
+      'tg_sesdmd',
+      'tg_sesdmdcmd',
+      'tg_tcpdmd',
+      'tg_centrcmd',
+      'tg_appgui',
+      'tg_sqladmin2',
+      'tg_db_mysql',
+
+      'bry_ctlsvmgen',
+      'qbz_userLibrary',
+      'qbz_dbUL',
+    ],
+
+    'config' => [
+      'texp',
+      'xan_cfgFront',
+    ],
+  },
+};
+
+# vim: ft=perl

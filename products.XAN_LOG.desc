@@ -1,0 +1,44 @@
+
+$PRODUCTS = {
+  'XAN_LOG' => {
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'binaries' => [
+      'tg_utils_gen',
+      'tg_daemon',
+    ],
+
+    'commands' => [
+      'texp',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+      'tg_hyp',
+      'tg_cliapp',
+      'tg_daemon',
+      'tg_logger',
+      'tg_logTangoWriter',
+      'tg_logFileWriter',
+      'tg_statServer',
+      'tg_traceSrv',
+      'xan_statCollector',
+    ],
+
+    'config' => [
+      'texp',
+      'xan_cfgLOG',
+    ],
+  },
+};
+
+# vim: ft=perl

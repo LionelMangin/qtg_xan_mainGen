@@ -1,0 +1,83 @@
+
+$PRODUCTS = {
+  'XAN_RECO' => {
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      # 'tg_builderXML',
+      # 'tg_busExpr',
+      # 'tg_expreval',
+      # 'tg_daemon',
+      # 'tg_utils_disp',
+      'tg_utils_gen',
+      'servstat',
+    ],
+
+    'dictionaries' => [
+      'qbz_dic',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+      'tg_hyp',
+      'tg_cliapp',
+      'tg_expreval',
+      'tg_json',
+      'tg_disp',
+      'tg_sessvm',
+      'tg_libwebsock',
+      'tg_seswebdmd',
+      'tg_seswebsvm',
+      'tg_sesdmd',
+      'tg_tcpsvm',
+      'tg_tcpdmd',
+      'tg_sesdmdcmd',
+      'tg_sessvmcmd',
+      'tg_centrcmd',
+      'tg_db_mysql',
+      'tg_libhttp',
+      'tg_xml2',
+      'tg_restsvm',
+
+      'tg_daemon',
+      'tg_logger',
+      'tg_logTangoWriter',
+      'tg_logFileWriter',
+      'tg_statServer',
+      'tg_traceSrv',
+      'xan_statCollector',
+
+      'xan_restsvm',
+      'bry_ctldmdgen',
+      'xan_ctldmdalgolia',
+      'xan_ctldmdelas',
+      'xan_suggest',
+      'xan_sasgen',
+      'xan_sasalgolia',
+      'xan_saselas',
+      'xan_sasmock',
+    ],
+
+    'config' => [
+      'texp',
+      'xan_cfgRECO',
+    ],
+
+    'webservice' => [
+      'xan_cfgRECO/webservice/REST',
+      'xan_cfgRECO/webservice/mock',
+    ],
+  },
+};
+
+# vim: ft=perl

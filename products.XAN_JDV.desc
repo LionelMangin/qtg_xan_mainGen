@@ -1,0 +1,104 @@
+
+$PRODUCTS = {
+  'XAN_JDV' => {
+    '..' => [
+      'tg_installer/extra_scripts/diff_pack.sh',
+    ],
+
+    'binaries' => [
+      # 'tg_builderXML',
+      # 'tg_busExpr',
+      # 'tg_expreval',
+      # 'tg_utils_disp',
+      'tg_utils_gen',
+      'bry_sax2bus',
+    ],
+
+    'dictionaries' => [
+      'bry_dic',
+    ],
+
+    'dic' => [
+      'xc_jdvimp/dic/',
+    ],
+
+    'commands' => [
+      'texp',
+      'xan_scripts',
+    ],
+
+    'libraries' => [
+      'tg_sys',
+    ],
+
+    'modules' => [
+
+      'bry_ctldmdgen',
+      'bry_ctlsvmgen',
+      'bry_dbAm',
+      'bry_db',
+      'bry_dbMod',
+      'bry_jdv',
+      'bry_sax2bus',
+      'ema_libemv',
+      'ema_npm_controls',
+      'npm_codec',
+      'tg_appgui',
+      'tg_auditTextBuilder',
+      'tg_busaccess',
+      'tg_busExpr',
+      'tg_busTplRenderer',
+      'tg_centrcmd',
+      'tg_cliapp',
+      'tg_dbconfig',
+      'tg_db_mysql',
+      'tg_dbtangoptf',
+      'tg_db_tango',
+      'tg_disp',
+      'tg_errorConverter',
+      'tg_expreval',
+      'tg_filesafgen',
+      'tg_hyp',
+      'tg_itgdep',
+      'tg_itgdmd',
+      'tg_itgsvm',
+      'tg_json',
+      'tg_libhttp',
+      'tg_logsrv',
+      'tg_pdfgen',
+      'tg_pdfWriter',
+      'tg_safgen',
+      'tg_sesdep',
+      'tg_sesdmdcmd',
+      'tg_sesdmd',
+      'tg_sessvmcmd',
+      'tg_sessvmgui',
+      'tg_sessvm',
+      'tg_libwebsock',
+      'tg_seswebdmd',
+      'tg_seswebsvm',
+      'tg_sesxml',
+      'tg_xml2',
+      'tg_simu',
+      'tg_sqladmin2',
+      'tg_srvdbtango',
+      'tg_tcpdmd',
+      'tg_tcpsvm',
+      'xc_jdvimp',
+      'xc_sfbulk',
+      'xc_sfextract',
+    ],
+
+    'config' => [
+      'texp',
+      'xan_cfgJDV',
+    ],
+
+    'config/npm' => [
+      'xc_jdvimp/config/qobuzOrder_codec.xml',
+      'xc_jdvimp/config/qobuzOrder.xsd',
+    ],
+  },
+};
+
+# vim: ft=perl
