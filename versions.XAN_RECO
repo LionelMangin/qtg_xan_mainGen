@@ -1,0 +1,80 @@
+# CVS - Do not modify this header ! #
+# $Date:  $ #
+# $RCSfile:  $ #
+# $Revision:  $ #
+# #(@) $Name:  $ #
+#LSC - Project XANDRIE - Product XAN_RECO - Version 1.0.0 - 2019-07-25T11:57:24+02:00
+#Format:
+# [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
+# action = C : clean / R : release / D : debug
+# type = l : lib / m : module / e : executable
+# cvsroot = if omitted use environment variable
+@versions = (
+
+  # Tango components
+  [ 'tg_sys',            'V06_20_10COM_19', 'R', 'l', 'http://git.lusis', 'tango-ptf-v6/tg_sys'             ],
+  [ 'tg_utils_gen',      'V03_11COM_01',    'R', 'e', 'http://git.lusis', 'tango-ptf-v6/tg_utils_gen'       ],
+
+  # Other components
+  [ 'qbz_dic',           'V01_19',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
+  [ 'xan_scripts',       'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'       ],
+
+  # Tango components
+  [ 'bin',               'V02_17_21',       '-', '-', 'http://git.lusis', 'tango-ptf-v6/bin'                ],
+  [ 'pro_db',            'V01_02',          '-', '-', 'http://git.lusis', 'tango-ptf/pro_db'                ],
+  [ 'pro_tmp',           'V02_02COM_03',    '-', '-', 'http://git.lusis', 'tango-ptf-v6/pro_tmp'            ],
+  [ 'texp',              'V02_31',          '-', '-', 'http://git.lusis', 'tango-ptf/texp'                  ],
+  [ 'bry_ctldmdgen',     'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'     ],
+  [ 'tg_builderXML',     'V01_13',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_builderXML'         ],
+  [ 'tg_busExpr',        'V01_12',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_busExpr'            ],
+  [ 'tg_centrcmd',       'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_centrcmd'        ],
+  [ 'tg_cliapp',         'V03_09COM_04',    'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_cliapp'          ],
+  [ 'tg_db_mysql',       'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'        ],
+  [ 'tg_disp',           'V06_10',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_disp'            ],
+  [ 'tg_expreval',       'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_expreval'           ],
+  [ 'tg_hyp',            'V04_35',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_hyp'                ],
+  [ 'tg_installer',      'V01_37_01',       '-', '-', 'http://git.lusis', 'tango-ptf/tg_installer'          ],
+  [ 'tg_libhttp',        'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'            ],
+  [ 'tg_libwebsock',     'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libwebsock'         ],
+  [ 'tg_json',           'V02_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_json'               ],
+  [ 'tg_restsvm',        'V00_19',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'    ],
+  [ 'tg_sesdmdcmd',      'V01_03',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmdcmd'          ],
+  [ 'tg_sessvm',         'V01_72',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvm'             ],
+  [ 'tg_sessvmcmd',      'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvmcmd'          ],
+  [ 'tg_seswebdmd',      'V01_17',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_seswebdmd'          ],
+  [ 'tg_seswebsvm',      'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_seswebsvm'          ],
+  [ 'tg_sesdmd',         'V02_10',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmd'             ],
+  [ 'tg_tcpdmd',         'V01_64COM_01',    'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tcpdmd'             ],
+  [ 'tg_tcpsvm',         'V02_55',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tcpsvm'             ],
+  [ 'tg_utils_disp',     'V01_06',          'R', 'e', 'http://git.lusis', 'tango-ptf/tg_utils_disp'         ],
+  [ 'tg_xml2',           'V01_30',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_xml2'               ],
+  [ 'tg_daemon',         'V01_00',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_daemon'             ],
+  [ 'tg_logFileWriter',  'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_logFileWriter'      ],
+  [ 'tg_logger',         'V01_04COM_02',    'R', 'e', 'http://git.lusis', 'tango-ptf/tg_logger'             ],
+  [ 'tg_logTangoWriter', 'V01_01COM_02',    'R', 'm', 'http://git.lusis', 'tango-ptf/tg_logTangoWriter'     ],
+  [ 'tg_statServer',     'V01_04COM_02',    'R', 'm', 'http://git.lusis', 'tango-ptf/tg_statServer'         ],
+  [ 'tg_traceSrv',       'V01_02COM_02',    'R', 'e', 'http://git.lusis', 'tango-ptf/tg_traceSrv'           ],
+  [ 'api_busTango',      'V01_10',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busTango'          ],
+  [ 'api_busLog',        'V01_13',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busLog'            ],
+  [ 'tg_decryptPwd',     'V01_11',          'R', 'l', 'http://git.lusis', 'tango-ptf/tg_decryptPwd'         ],
+
+  # Batch components
+  [ 'servstat',          'V01_35',          'R', 'e', 'http://git.lusis', 'tango-ptf/servstat'              ],
+
+  # Tango components
+  [ 'xan_restsvm',       'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_restsvm'       ],
+  [ 'xan_statCollector', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_statCollector' ],
+
+  # Other components
+  [ 'xan_cfgRECO',       'V00_03',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
+
+  # Tango components
+  [ 'xan_ctldmdalgolia', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia' ],
+  [ 'xan_ctldmdelas',    'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdelas'    ],
+  [ 'xan_suggest',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
+  [ 'xan_sasgen',        'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasgen'        ],
+  [ 'xan_sasalgolia',    'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
+  [ 'xan_saselas',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_saselas'       ],
+  [ 'xan_sasmock',       'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasmock'       ],
+
+);

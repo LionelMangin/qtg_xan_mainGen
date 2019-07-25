@@ -1,14 +1,17 @@
 #!/bin/bash
 
+set -o errexit
+
 # check args
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
   echo "$# arguments supplied (expecting 2)"
-  echo "Usage: $0 ENV TGBUILD"
-  echo "Exemple: $0 XAN_API api.b01"
+  echo "Usage: $0 TGBUILD"
+  echo "Exemple: $0 b01"
   exit 1
 fi
 
-VERSION="RXAN_01_05_00"
+BUILD=$1
+. ./xan_install.ini
 
 # check if version is correct
 echo "Using version: $VERSION"
@@ -18,8 +21,8 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then
   [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # handle exits from shell or function but don't exit interactive shell
 fi
 
-REPO="/home/gen/ref_tango/$VERSION.$2"
-TARFILE="/home/gen/ref_tango/XANDRIE_TANGO.$VERSION.$2.tgz"
+REPO="/home/gen/ref_tango/$VERSION.$NAME.$BUILD"
+TARFILE="/home/gen/ref_tango/$ENV.$VERSION.$NAME.$BUILD.tgz"
 DEST="allbrary@10.9.5.106:/APPLI_A/ALLBRARY/Serveur/liv"
 
 # check if output exists
@@ -34,10 +37,10 @@ if [ -d $REPO ]; then
 fi
 
 #perform build
-export TGBUILD=$2
+export TGBUILD="$NAME.$BUILD"
 
-echo "Building $1..."
-tg_installer/buildDelivery.pl $1
+echo "Building $ENV..."
+tg_installer/buildDelivery.pl $ENV
 echo "Moving build..."
 scp $TARFILE $DEST
 echo "Done!"
