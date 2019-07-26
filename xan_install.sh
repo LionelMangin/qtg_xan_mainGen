@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -o errexit
+#set -o xtrace
 
 # check args
 if [ $# -ne 1 ]; then
@@ -11,7 +12,7 @@ if [ $# -ne 1 ]; then
 fi
 
 BUILD=$1
-. ./xan_install.ini
+. ./`basename "$0"`.ini
 
 # check if version is correct
 echo "Using version: $VERSION"
