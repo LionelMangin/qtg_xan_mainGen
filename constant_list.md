@@ -63,6 +63,8 @@
 | 60XX      | xan     | reco           |         | xan\_suggest                              | -    |
 | 61XX      | xan     | algolia        |         | xan\_sasalgolia                           | -    |
 | 62XX      | xan     | elactic search |         | xan\_elasticSearch                        | -    |
+| 63XX      | xb      | Danalys        |         | xb\_ctldmddnlys                           | -    |
+| 64XX      | xb      | Checkout       |         | xb\_ctldmdcout                            | -    |
 
 ## port range list
 
