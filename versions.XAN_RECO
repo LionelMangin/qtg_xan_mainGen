@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_RECO - Version 1.0.0 - 2019-07-25T11:57:24+02:00
+#LSC - Project XANDRIE - Product XAN_RECO - Version XAN.02_00_00 - 2019-08-07T18:03:32+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -14,24 +14,17 @@
   # Tango components
   [ 'tg_sys',            'V06_20_10COM_19', 'R', 'l', 'http://git.lusis', 'tango-ptf-v6/tg_sys'             ],
   [ 'tg_utils_gen',      'V03_11COM_01',    'R', 'e', 'http://git.lusis', 'tango-ptf-v6/tg_utils_gen'       ],
-
-  # Other components
-  [ 'qbz_dic',           'V01_19',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
-  [ 'xan_scripts',       'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'       ],
-
-  # Tango components
   [ 'bin',               'V02_17_21',       '-', '-', 'http://git.lusis', 'tango-ptf-v6/bin'                ],
   [ 'pro_db',            'V01_02',          '-', '-', 'http://git.lusis', 'tango-ptf/pro_db'                ],
   [ 'pro_tmp',           'V02_02COM_03',    '-', '-', 'http://git.lusis', 'tango-ptf-v6/pro_tmp'            ],
   [ 'texp',              'V02_31',          '-', '-', 'http://git.lusis', 'tango-ptf/texp'                  ],
-  [ 'bry_ctldmdgen',     'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'     ],
+  [ 'tg_cliapp',         'V03_09COM_04',    'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_cliapp'          ],
+  [ 'tg_expreval',       'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_expreval'           ],
   [ 'tg_builderXML',     'V01_13',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_builderXML'         ],
   [ 'tg_busExpr',        'V01_12',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_busExpr'            ],
   [ 'tg_centrcmd',       'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_centrcmd'        ],
-  [ 'tg_cliapp',         'V03_09COM_04',    'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_cliapp'          ],
   [ 'tg_db_mysql',       'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'        ],
   [ 'tg_disp',           'V06_10',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_disp'            ],
-  [ 'tg_expreval',       'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_expreval'           ],
   [ 'tg_hyp',            'V04_35',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_hyp'                ],
   [ 'tg_installer',      'V01_37_01',       '-', '-', 'http://git.lusis', 'tango-ptf/tg_installer'          ],
   [ 'tg_libhttp',        'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'            ],
@@ -63,18 +56,19 @@
 
   # Tango components
   [ 'xan_restsvm',       'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_restsvm'       ],
-  [ 'xan_statCollector', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_statCollector' ],
-
-  # Other components
-  [ 'xan_cfgRECO',       'V00_03',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
-
-  # Tango components
+  [ 'bry_ctldmdgen',     'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'     ],
   [ 'xan_ctldmdalgolia', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia' ],
   [ 'xan_ctldmdelas',    'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdelas'    ],
   [ 'xan_suggest',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
   [ 'xan_sasgen',        'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasgen'        ],
-  [ 'xan_sasalgolia',    'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
+  [ 'xan_sasalgolia',    'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
   [ 'xan_saselas',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_saselas'       ],
   [ 'xan_sasmock',       'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasmock'       ],
+  [ 'xan_statCollector', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_statCollector' ],
+
+  # Other components
+  [ 'xan_scripts',       'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'       ],
+  [ 'qbz_dic',           'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
+  [ 'xan_cfgRECO',       'V00_04',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
 
 );

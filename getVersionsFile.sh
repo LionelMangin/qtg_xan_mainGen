@@ -5,7 +5,7 @@ set -o errexit
 
 . ./`basename "$0"`.ini
 
-COOKIEFILE=cookies.txt
+COOKIEFILE=`basename "$0"`.cookies.txt
 VERSIONSFILE=xan_mainGen/versions.${ENV}
 
 if [[ -f "$COOKIEFILE" ]]; then
