@@ -27,7 +27,7 @@ if [[ $LINE == "# CVS - Do not modify this header ! #" ]]; then
   echo "versions download success!" 
 else
   echo "versions download failed!"
-  echo "try removing cookies.txt"
+  echo "try removing $COOKIEFILE"
 fi
 
 
