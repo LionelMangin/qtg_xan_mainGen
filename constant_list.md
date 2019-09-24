@@ -1,7 +1,7 @@
 
-# Contants list for QOBUZ project
+# Constants list for QOBUZ project
 
-## MTI ranges
+## MTI ranges
 
 | MTI range | Project | Process        | Service | Module                                    | Desc |
 |:----------|:--------|:---------------|:--------|:------------------------------------------|:-----|
@@ -62,7 +62,7 @@
 | 59XX      | qbz     | s3Pusher       |         | xan\_s3Pusher                             | -    |
 | 60XX      | xan     | reco           |         | xan\_suggest                              | -    |
 | 61XX      | xan     | algolia        |         | xan\_sasalgolia                           | -    |
-| 62XX      | xan     | elactic search |         | xan\_elasticSearch                        | -    |
+| 62XX      | xan     | elastic search |         | xan\_elasticSearch                        | -    |
 | 63XX      | xb      | Danalys        |         | xb\_ctldmddnlys                           | -    |
 | 64XX      | xb      | Checkout       |         | xb\_ctldmdcout                            | -    |
 
