@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_RECO - Version XAN.02_00_00 - 2019-08-07T18:03:32+02:00
+#LSC - Project XANDRIE - Product XAN_RECO - Version XAN.02_01_00 - 2019-09-19T17:42:15+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -57,18 +57,18 @@
   # Tango components
   [ 'xan_restsvm',       'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_restsvm'       ],
   [ 'bry_ctldmdgen',     'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'     ],
-  [ 'xan_ctldmdalgolia', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia' ],
-  [ 'xan_ctldmdelas',    'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdelas'    ],
-  [ 'xan_suggest',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
-  [ 'xan_sasgen',        'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasgen'        ],
-  [ 'xan_sasalgolia',    'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
-  [ 'xan_saselas',       'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_saselas'       ],
+  [ 'xan_ctldmdalgolia', 'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia' ],
+  [ 'xan_ctldmdelas',    'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdelas'    ],
+  [ 'xan_suggest',       'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
+  [ 'xan_sasgen',        'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasgen'        ],
+  [ 'xan_sasalgolia',    'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
+  [ 'xan_saselas',       'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_saselas'       ],
   [ 'xan_sasmock',       'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasmock'       ],
   [ 'xan_statCollector', 'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_statCollector' ],
 
   # Other components
   [ 'xan_scripts',       'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'       ],
   [ 'qbz_dic',           'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
-  [ 'xan_cfgRECO',       'V00_04',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
+  [ 'xan_cfgRECO',       'V00_05',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
 
 );
