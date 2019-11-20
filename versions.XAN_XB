@@ -1,0 +1,115 @@
+# CVS - Do not modify this header ! #
+# $Date:  $ #
+# $RCSfile:  $ #
+# $Revision:  $ #
+# #(@) $Name:  $ #
+#LSC - Project XANDRIE - Product XAN_XB - Version XAN.02_00_00 - 2019-11-13T16:36:38+01:00
+#Format:
+# [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
+# action = C : clean / R : release / D : debug
+# type = l : lib / m : module / e : executable
+# cvsroot = if omitted use environment variable
+@versions = (
+
+  # Tango components
+  [ 'tg_sys',               'V06_20_10COM_19', 'R', 'l', 'http://git.lusis', 'tango-ptf-v6/tg_sys'                ],
+  [ 'tg_utils_gen',         'V03_11COM_01',    'R', 'e', 'http://git.lusis', 'tango-ptf-v6/tg_utils_gen'          ],
+  [ 'bin',                  'V02_17_21',       '-', '-', 'http://git.lusis', 'tango-ptf-v6/bin'                   ],
+  [ 'pro_db',               'V01_02',          '-', '-', 'http://git.lusis', 'tango-ptf/pro_db'                   ],
+  [ 'pro_tmp',              'V02_02COM_03',    '-', '-', 'http://git.lusis', 'tango-ptf-v6/pro_tmp'               ],
+  [ 'texp',                 'V02_31',          '-', '-', 'http://git.lusis', 'tango-ptf/texp'                     ],
+  [ 'tg_cliapp',            'V03_09COM_04',    'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_cliapp'             ],
+  [ 'tg_expreval',          'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_expreval'              ],
+  [ 'tg_batch',             'V02_14',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_batch'                 ],
+  [ 'tg_hyp',               'V04_35',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_hyp'                   ],
+  [ 'tg_disp',              'V06_10',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_disp'               ],
+  [ 'tg_libwebsock',        'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libwebsock'            ],
+  [ 'tg_libhttp',           'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'               ],
+  [ 'tg_db_mysql',          'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'           ],
+  [ 'tg_centrcmd',          'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_centrcmd'           ],
+  [ 'tg_sesdmd',            'V02_10',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmd'                ],
+  [ 'tg_sessvm',            'V01_72',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvm'                ],
+  [ 'tg_tcpdmd',            'V01_64COM_01',    'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tcpdmd'                ],
+  [ 'tg_tcpsvm',            'V02_55',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tcpsvm'                ],
+  [ 'tg_sesdmdcmd',         'V01_03',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmdcmd'             ],
+  [ 'tg_sessvmcmd',         'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvmcmd'             ],
+  [ 'tg_seswebsvm',         'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_seswebsvm'             ],
+  [ 'tg_restsvm',           'V00_19',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'       ],
+  [ 'tg_filesafgen',        'V02_00',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafgen'       ],
+  [ 'tg_filesafwriter',     'V00_08',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'    ],
+  [ 'tg_installer',         'V01_37_01',       '-', '-', 'http://git.lusis', 'tango-ptf/tg_installer'             ],
+  [ 'tg_builderXML',        'V01_13',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_builderXML'            ],
+  [ 'tg_busExpr',           'V01_12',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_busExpr'               ],
+  [ 'tg_utils_disp',        'V01_06',          'R', 'e', 'http://git.lusis', 'tango-ptf/tg_utils_disp'            ],
+  [ 'tg_appgui',            'V03_00_02',       'R', 'm', 'http://git.lusis', 'tango-ptf/tg_appgui'                ],
+  [ 'tg_busTplRenderer',    'V01_13',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_busTplRenderer'        ],
+  [ 'tg_control',           'V01_44',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_control'               ],
+  [ 'tg_dbconfig',          'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_dbconfig'              ],
+  [ 'tg_dbtangoptf',        'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_dbtangoptf'            ],
+  [ 'tg_db_tango',          'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_tango'           ],
+  [ 'tg_itgsvm',            'V01_14',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_itgsvm'                ],
+  [ 'tg_json',              'V02_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_json'                  ],
+  [ 'tg_mails',             'V01_12',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_mails'                 ],
+  [ 'tg_sessvmgui',         'V01_00',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvmgui'             ],
+  [ 'tg_seswebdmd',         'V01_17',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_seswebdmd'             ],
+  [ 'tg_simu',              'V02_19',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_simu'                  ],
+  [ 'tg_smtpcli',           'V01_06',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_smtpcli'               ],
+  [ 'tg_sqladmin2',         'V01_32',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sqladmin2'             ],
+  [ 'tg_template',          'V01_06',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_template'              ],
+  [ 'tg_wsruntime',         'V01_80_06',       'R', 'm', 'http://git.lusis', 'tango-ptf/tg_wsruntime'             ],
+  [ 'tg_xml2',              'V01_30',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_xml2'                  ],
+  [ 'api_busLog',           'V01_13',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busLog'               ],
+  [ 'api_busTango',         'V01_10',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busTango'             ],
+  [ 'tg_decryptPwd',        'V01_11',          'R', 'l', 'http://git.lusis', 'tango-ptf/tg_decryptPwd'            ],
+
+  # Batch components
+  [ 'servstat',             'V01_35',          'R', 'e', 'http://git.lusis', 'tango-ptf/servstat'                 ],
+  [ 'tg_controlUtils',      'V01_14',          'R', 'e', 'http://git.lusis', 'tango-ptf/tg_controlUtils'          ],
+
+  # Tango components
+  [ 'bry_ctldmdgen',        'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'        ],
+  [ 'bry_ctldmdadyen',      'V01_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdadyen'      ],
+  [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdpaypal'     ],
+  [ 'qbz_ctldmdpaypal',     'V01_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/qbz_ctldmdpaypal'     ],
+  [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdpbox'       ],
+  [ 'xb_ctldmddlnys',       'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmddlnys'       ],
+  [ 'xb_ctldmdcout',        'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmdcout'        ],
+  [ 'bry_ctlsvmgen',        'V02_01',          'R', 'l', 'http://git.lusis', 'XANDRIE/tango/bry_ctlsvmgen'        ],
+  [ 'xan_ctldmdtaxcloud',   'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdtaxcloud'   ],
+  [ 'xb_ctldmdibrandrest',  'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmdibrandrest'  ],
+  [ 'bry_mails',            'V01_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_mails'            ],
+  [ 'xb_db',                'V02_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_db'                ],
+  [ 'xb_dbBk',              'V02_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_dbBk'              ],
+  [ 'xb_dbOrder',           'V01_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_dbOrder'           ],
+  [ 'xb_order',             'V02_18',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_order'             ],
+  [ 'xb_auth',              'V03_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_auth'              ],
+  [ 'xb_ibrandXo',          'V01_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ibrandXo'          ],
+  [ 'xb_mdpTypeCardAdyen',  'V01_08',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardAdyen'  ],
+  [ 'xb_mdpTypeCardOgone',  'V01_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardOgone'  ],
+  [ 'xb_mdpTypeCardPaybox', 'V01_12',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardPaybox' ],
+  [ 'xb_mdpTypeCardCout',   'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardCout'   ],
+  [ 'xb_mdpTypeCardDlnys',  'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardDlnys'  ],
+  [ 'xb_mdpTypeCredit',     'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCredit'     ],
+  [ 'xb_mdpTypeFid',        'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeFid'        ],
+  [ 'xb_mdpTypeFree',       'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeFree'       ],
+  [ 'xb_mdpTypeIdealAdyen', 'V01_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeIdealAdyen' ],
+  [ 'xb_mdpTypeMock',       'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeMock'       ],
+  [ 'xb_mdpTypePaypal',     'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypePaypal'     ],
+  [ 'xb_mdpTypePaypalSoap', 'V00_08',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypePaypalSoap' ],
+  [ 'xb_mdpTypeSepaAdyen',  'V01_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeSepaAdyen'  ],
+  [ 'xb_mdpTypeVoucher',    'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeVoucher'    ],
+  [ 'xb_ibrandRest',        'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ibrandRest'        ],
+  [ 'xb_notif',             'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_notif'             ],
+
+  # Batch components
+  [ 'xan_jdvUtils',         'V00_01',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xan_jdvUtils'         ],
+  [ 'xb_ps2alias',          'V00_02',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xb_ps2alias'          ],
+  [ 'xb_utils',             'V00_01',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xb_utils'             ],
+
+  # Other components
+  [ 'qbz_dic',              'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'              ],
+  [ 'xan_cfgXB',            'V00_15',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgXB'           ],
+  [ 'bryws_adyen',          'V01_01',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/bryws_adyen'          ],
+  [ 'qbzws_paypal',         'V01_02',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbzws_paypal'         ],
+
+);
