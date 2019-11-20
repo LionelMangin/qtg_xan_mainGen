@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_API - Version 1.0.0 - 2019-07-25T17:27:18+02:00
+#LSC - Project XANDRIE - Product XAN_API - Version XAN.02_00_00 - 2019-11-05T15:20:42+01:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -38,7 +38,7 @@
   [ 'tg_libhttp',          'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'              ],
   [ 'tg_restsvm',          'V00_19',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'      ],
   [ 'tg_filesafgen',       'V02_00',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafgen'      ],
-  [ 'tg_filesafwriter',    'V00_07',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'   ],
+  [ 'tg_filesafwriter',    'V00_08',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'   ],
   [ 'tg_tzdb',             'V01_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tzdb'                 ],
   [ 'tg_xml2',             'V01_30',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_xml2'                 ],
   [ 'api_busLog',          'V01_13',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busLog'              ],
@@ -56,9 +56,9 @@
   [ 'xan_authenticate',    'V00_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_authenticate'    ],
   [ 'xan_db',              'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_db'              ],
   [ 'xan_collecteBI',      'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_collecteBI'      ],
-  [ 'xan_linkFire',        'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_linkFire'        ],
+  [ 'xan_linkFire',        'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_linkFire'        ],
   [ 'xan_reportStreaming', 'V00_22',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_reportStreaming' ],
-  [ 'xan_s3Pusher',        'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_s3Pusher'        ],
+  [ 'xan_s3Pusher',        'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_s3Pusher'        ],
 
   # Other components
   [ 'xan_cfgAPI',          'V00_16',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgAPI'         ],
