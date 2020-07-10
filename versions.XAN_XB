@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_XB - Version XAN.02_00_00 - 2019-11-13T16:36:38+01:00
+#LSC - Project XANDRIE - Product XAN_XB - Version XAN.02_01_00 - 2020-06-26T15:52:23+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -24,7 +24,7 @@
   [ 'tg_hyp',               'V04_35',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_hyp'                   ],
   [ 'tg_disp',              'V06_10',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_disp'               ],
   [ 'tg_libwebsock',        'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libwebsock'            ],
-  [ 'tg_libhttp',           'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'               ],
+  [ 'tg_libhttp',           '2.9.4',           'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'               ],
   [ 'tg_db_mysql',          'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'           ],
   [ 'tg_centrcmd',          'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_centrcmd'           ],
   [ 'tg_sesdmd',            'V02_10',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmd'                ],
@@ -72,24 +72,24 @@
   [ 'bry_ctldmdpaypal',     'V02_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdpaypal'     ],
   [ 'qbz_ctldmdpaypal',     'V01_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/qbz_ctldmdpaypal'     ],
   [ 'bry_ctldmdpbox',       'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdpbox'       ],
-  [ 'xb_ctldmddlnys',       'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmddlnys'       ],
-  [ 'xb_ctldmdcout',        'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmdcout'        ],
+  [ 'xb_ctldmddlnys',       'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmddlnys'       ],
+  [ 'xb_ctldmdcout',        'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmdcout'        ],
   [ 'bry_ctlsvmgen',        'V02_01',          'R', 'l', 'http://git.lusis', 'XANDRIE/tango/bry_ctlsvmgen'        ],
   [ 'xan_ctldmdtaxcloud',   'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdtaxcloud'   ],
   [ 'xb_ctldmdibrandrest',  'V00_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ctldmdibrandrest'  ],
   [ 'bry_mails',            'V01_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_mails'            ],
   [ 'xb_db',                'V02_00',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_db'                ],
-  [ 'xb_dbBk',              'V02_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_dbBk'              ],
+  [ 'xb_dbBk',              'V02_08',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_dbBk'              ],
   [ 'xb_dbOrder',           'V01_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_dbOrder'           ],
-  [ 'xb_order',             'V02_18',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_order'             ],
-  [ 'xb_auth',              'V03_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_auth'              ],
+  [ 'xb_order',             'V02_19',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_order'             ],
+  [ 'xb_auth',              'V03_18',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_auth'              ],
   [ 'xb_ibrandXo',          'V01_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_ibrandXo'          ],
   [ 'xb_mdpTypeCardAdyen',  'V01_08',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardAdyen'  ],
   [ 'xb_mdpTypeCardOgone',  'V01_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardOgone'  ],
   [ 'xb_mdpTypeCardPaybox', 'V01_12',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardPaybox' ],
-  [ 'xb_mdpTypeCardCout',   'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardCout'   ],
-  [ 'xb_mdpTypeCardDlnys',  'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardDlnys'  ],
-  [ 'xb_mdpTypeCredit',     'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCredit'     ],
+  [ 'xb_mdpTypeCardCout',   'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardCout'   ],
+  [ 'xb_mdpTypeCardDlnys',  'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCardDlnys'  ],
+  [ 'xb_mdpTypeCredit',     'V01_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeCredit'     ],
   [ 'xb_mdpTypeFid',        'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeFid'        ],
   [ 'xb_mdpTypeFree',       'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeFree'       ],
   [ 'xb_mdpTypeIdealAdyen', 'V01_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xb_mdpTypeIdealAdyen' ],
@@ -104,11 +104,11 @@
   # Batch components
   [ 'xan_jdvUtils',         'V00_01',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xan_jdvUtils'         ],
   [ 'xb_ps2alias',          'V00_02',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xb_ps2alias'          ],
-  [ 'xb_utils',             'V00_01',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xb_utils'             ],
+  [ 'xb_utils',             'V00_05',          'R', 'e', 'http://git.lusis', 'XANDRIE/tango/xb_utils'             ],
 
   # Other components
-  [ 'qbz_dic',              'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'              ],
-  [ 'xan_cfgXB',            'V00_15',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgXB'           ],
+  [ 'qbz_dic',              'V01_29',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'              ],
+  [ 'xan_cfgXB',            'V00_20',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgXB'           ],
   [ 'bryws_adyen',          'V01_01',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/bryws_adyen'          ],
   [ 'qbzws_paypal',         'V01_02',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbzws_paypal'         ],
 

@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_RECO - Version XAN.02_01_00 - 2019-09-19T17:42:15+02:00
+#LSC - Project XANDRIE - Product XAN_RECO - Version XAN.02_02_00 - 2020-02-11T10:10:24+01:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -59,7 +59,7 @@
   [ 'bry_ctldmdgen',     'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'     ],
   [ 'xan_ctldmdalgolia', 'V00_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia' ],
   [ 'xan_ctldmdelas',    'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdelas'    ],
-  [ 'xan_suggest',       'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
+  [ 'xan_suggest',       'V00_05',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_suggest'       ],
   [ 'xan_sasgen',        'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasgen'        ],
   [ 'xan_sasalgolia',    'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_sasalgolia'    ],
   [ 'xan_saselas',       'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_saselas'       ],
@@ -68,7 +68,7 @@
 
   # Other components
   [ 'xan_scripts',       'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'       ],
-  [ 'qbz_dic',           'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
-  [ 'xan_cfgRECO',       'V00_05',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
+  [ 'qbz_dic',           'V01_24',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'           ],
+  [ 'xan_cfgRECO',       'V00_08',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgRECO'      ],
 
 );

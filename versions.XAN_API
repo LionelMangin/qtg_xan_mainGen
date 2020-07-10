@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_API - Version XAN.02_00_00 - 2019-11-05T15:20:42+01:00
+#LSC - Project XANDRIE - Product XAN_API - Version XAN.02_02_00 - 2020-07-07T14:34:26+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -35,8 +35,8 @@
   [ 'tg_libwebsock',       'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libwebsock'           ],
   [ 'tg_centrcmd',         'V01_01',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_centrcmd'          ],
   [ 'tg_db_mysql',         'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'          ],
-  [ 'tg_libhttp',          'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'              ],
-  [ 'tg_restsvm',          'V00_19',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'      ],
+  [ 'tg_libhttp',          '2.9.4',           'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'              ],
+  [ 'tg_restsvm',          'V00_20',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'      ],
   [ 'tg_filesafgen',       'V02_00',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafgen'      ],
   [ 'tg_filesafwriter',    'V00_08',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'   ],
   [ 'tg_tzdb',             'V01_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tzdb'                 ],
@@ -51,18 +51,19 @@
   # Tango components
   [ 'bry_ctldmdgen',       'V02_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/bry_ctldmdgen'       ],
   [ 'xan_ctldmdlastfm',    'V01_03',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdlastfm'    ],
+  [ 'xan_ctldmdalgolia',   'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_ctldmdalgolia'   ],
   [ 'xan_restsvm',         'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_restsvm'         ],
-  [ 'xan_alexa',           'V00_08',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_alexa'           ],
-  [ 'xan_authenticate',    'V00_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_authenticate'    ],
+  [ 'xan_alexa',           'V00_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_alexa'           ],
+  [ 'xan_authenticate',    'V00_10',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_authenticate'    ],
   [ 'xan_db',              'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_db'              ],
-  [ 'xan_collecteBI',      'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_collecteBI'      ],
-  [ 'xan_linkFire',        'V00_06',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_linkFire'        ],
-  [ 'xan_reportStreaming', 'V00_22',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_reportStreaming' ],
+  [ 'xan_collecteBI',      'V00_09',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_collecteBI'      ],
+  [ 'xan_linkFire',        'V00_10',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_linkFire'        ],
+  [ 'xan_reportStreaming', 'V00_28',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_reportStreaming' ],
   [ 'xan_s3Pusher',        'V00_04',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_s3Pusher'        ],
 
   # Other components
-  [ 'xan_cfgAPI',          'V00_16',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgAPI'         ],
+  [ 'xan_cfgAPI',          'V00_19',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgAPI'         ],
   [ 'xan_scripts',         'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'         ],
-  [ 'qbz_dic',             'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'             ],
+  [ 'qbz_dic',             'V01_29',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'             ],
 
 );

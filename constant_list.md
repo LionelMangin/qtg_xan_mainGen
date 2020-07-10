@@ -76,6 +76,7 @@
 | XAN\_XB   | ~/env/xb   | int01   | 290XX     | int01   | 210XX      | tango-ul-xb/xb-app    | XB frontend  |
 |           |            |         |           |         | 210XX      | xandrie-tango/ manuel | XB backend   |
 | XAN\_JDV  | ~/env/jdv  | int02   | 190XX     |         |            | xandrie-tango/ manuel |              |
+| XAN\_JDV  |            | intJDV  | 191XX     |         |            |                       |              |
 | XAN\_API  | ~/env/api  | intapi  | 300XX     | apiapp  | 240XX      | tango-api/api-app     |              |
 | XAN\_SR   | ~/env/sr   | intsr   | 320XX     | srapp   | 240XX      | tango-ul-xb/sr-app    |              |
 | XAN\_RECO | ~/env/reco | intreco | 310XX     | recoapp | 250XX ?    |                       |              |

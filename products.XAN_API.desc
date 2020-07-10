@@ -59,6 +59,7 @@ $PRODUCTS = {
       'xan_reportStreaming',
       'bry_ctldmdgen',
       'xan_ctldmdlastfm',
+      'xan_ctldmdalgolia',
       'xan_collecteBI',
       'xan_s3Pusher',
       'xan_linkFire',

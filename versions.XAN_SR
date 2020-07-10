@@ -3,7 +3,7 @@
 # $RCSfile:  $ #
 # $Revision:  $ #
 # #(@) $Name:  $ #
-#LSC - Project XANDRIE - Product XAN_SR - Version XAN.02_00_00 - 2019-09-30T17:53:53+02:00
+#LSC - Project XANDRIE - Product XAN_SR - Version XAN.02_02_00 - 2020-07-07T12:51:02+02:00
 #Format:
 # [ "component name (checkout directory)", "CVS revision/tag", "action", "type", "cvsroot", "CVS module name or path" ],
 # action = C : clean / R : release / D : debug
@@ -23,7 +23,7 @@
   [ 'tg_hyp',              'V04_35',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_hyp'                  ],
   [ 'tg_disp',             'V06_10',          'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_disp'              ],
   [ 'tg_libwebsock',       'V01_05',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libwebsock'           ],
-  [ 'tg_libhttp',          'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'              ],
+  [ 'tg_libhttp',          '2.9.4',           'R', 'm', 'http://git.lusis', 'tango-ptf/tg_libhttp'              ],
   [ 'tg_json',             'V02_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_json'                 ],
   [ 'tg_tzdb',             'V01_07',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_tzdb'                 ],
   [ 'tg_db_mysql',         'V02_31_03',       'R', 'm', 'http://git.lusis', 'tango-ptf-v6/tg_db_mysql'          ],
@@ -35,9 +35,9 @@
   [ 'tg_sesdmdcmd',        'V01_03',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sesdmdcmd'            ],
   [ 'tg_sessvmcmd',        'V01_02',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_sessvmcmd'            ],
   [ 'tg_seswebsvm',        'V02_08',          'R', 'm', 'http://git.lusis', 'tango-ptf/tg_seswebsvm'            ],
-  [ 'tg_restsvm',          'V00_19',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'      ],
-  [ 'tg_filesafgen',       'V02_01',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafgen'      ],
-  [ 'tg_filesafwriter',    'V00_08',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'   ],
+  [ 'tg_restsvm',          'V00_20',          'R', 'm', 'http://git.lusis', 'TANGO/moduleTango/tg_restsvm'      ],
+  [ 'tg_filesafgen',       'V02_02',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafgen'      ],
+  [ 'tg_filesafwriter',    'V00_09',          'R', 'm', 'http://git.lusis', 'TANGO/ptfTango/tg_filesafwriter'   ],
   [ 'tg_installer',        'V01_37_01',       '-', '-', 'http://git.lusis', 'tango-ptf/tg_installer'            ],
   [ 'api_busLog',          'V01_13',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busLog'              ],
   [ 'api_busTango',        'V01_10',          'R', 'l', 'http://git.lusis', 'tango-ptf/api_busTango'            ],
@@ -49,13 +49,13 @@
   # Tango components
   [ 'xan_restsvm',         'V00_07',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_restsvm'         ],
   [ 'xan_db',              'V00_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_db'              ],
-  [ 'xan_reportStreaming', 'V00_24',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_reportStreaming' ],
+  [ 'xan_reportStreaming', 'V00_28',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/xan_reportStreaming' ],
   [ 'qbz_topptf',          'V01_01',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/qbz_topptf'          ],
   [ 'qbz_topupdate',       'V01_02',          'R', 'm', 'http://git.lusis', 'XANDRIE/tango/qbz_topupdate'       ],
 
   # Other components
   [ 'xan_scripts',         'V01_07',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/xan_scripts'         ],
-  [ 'qbz_dic',             'V01_23',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'             ],
-  [ 'xan_cfgSR',           'V00_12',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgSR'          ],
+  [ 'qbz_dic',             'V01_29',          '-', '-', 'http://git.lusis', 'XANDRIE/tango/qbz_dic'             ],
+  [ 'xan_cfgSR',           'V00_17',          '-', '-', 'http://git.lusis', 'XANDRIE/config/xan_cfgSR'          ],
 
 );
